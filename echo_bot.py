@@ -1,10 +1,9 @@
 import telebot
 from pyowm import OWM
 import json
+from env import t, owm_k
+owm = OWM(owm_k)
 
-
-t = '2072732993:AAF7WeOhb2n337Sle5658HZDXSKGQJA_Ly8'
-owm = OWM('1cf170c90f40b0c407f740d74f58e54c')
 
 bot = telebot.TeleBot(t, parse_mode=None)
 
